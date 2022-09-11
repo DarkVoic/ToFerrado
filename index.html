@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tô Ferrado</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./toferrado.css"/>
+    <script src="./script.js"></script>
+    <script src="./toferrado.js"></script>
+</head>
+<body>
+    <header class="headerBar dark">
+        <div class="appName">Tô Ferrado</div>
+        <div class="badge warning"><span id="estado">0</span></div>
+    </header>
+
+    <div id="tela1" class="component">
+        <div class="componentHeader">
+            <h1 class="componentTitle">Minhas tarefas</h1>
+            <button id="btnAdic" class="button primary"><img src="./assets/plus1.png"></button>
+        </div>
+        <div class="componentContent">
+            <div id="blank">
+                <img src="./assets/hangloose.png" alt="Nada a fazer agora">
+                <p>Nada a fazer agora!</p>
+            </div>
+            <ul id="listaDeTarefas" class="list hidden">
+                
+            </ul>
+        </div>
+    </div>
+    <div id="tela2" class="component hidden">
+        <div class="componentHeader">
+            <h1 class="componentTitle">
+                Nova Tarefa
+            </h1>
+        </div>
+        <div class="componentContent">
+            <div class="fiel">
+                <label for="inputNovaTarefa">Tarefa:</label>
+                <input id="inputNovaTarefa" type="text" autocomplete="off">
+            </div>
+            <div class="buttonGroup mt1 end">
+                <button id="btnCanc1" class="button quarter light">Cancelar</button>
+                <button id="btnInc" class="button quarter primary" disabled>
+                    Incluir
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="tela3" class="component hidden">
+        <div class="componentHeader">
+            <h1 class="componentTitle">Alteração de tarefa</h1>
+        </div>
+        <div class="componentContent">
+            <div class="field">
+                <label for="inputAlteraTarefa">Tarefa:</label>
+                <input id="inputAlteraTarefa" type="text" autocomplete="off">
+            </div>
+            <div class="buttonGroup end mt1">
+                <button id="btnCanc2" class="button quarter light">Cancelar</button>
+                <button id="btnAlt" class="button quarter primary">Alterar</button>
+            </div>
+            <div class="buttonGroup end mt3">
+                <button id="btnDel" class="button quarter danger">
+                    Apagar tarefa
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
